@@ -1,0 +1,11 @@
+Słownik podobny do tego w telefonie:
+Po wpisaniu ciągu znaków ma znaleźć i dopasować słowo
+Jakaś baza słów jako kontener. Ma być bardzo szybki w przeszukiwaniu
+pyłek - flyweight | wzorzec projektowy
+iterator | wzorzec projektowy
+sekwencyjny dostęp do danych
+w pliku zbiór słów alfabetycznie
+Po wczytaniu danych i reszty kodu struktura drzewiasta pozwala 
+
+minimalna dłg słowa to 2 znaki
+jeśli użytkownik się pomyli przy wpisywaniu to program przestaje podpowiadać i proponuje dodanie nowego słowa

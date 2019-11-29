@@ -1,0 +1,15 @@
+D:\GitHub\WordDictionary\WordDictionary\bin\Debug\WordDictionary.exe.config
+D:\GitHub\WordDictionary\WordDictionary\bin\Debug\WordDictionary.exe
+D:\GitHub\WordDictionary\WordDictionary\bin\Debug\WordDictionary.pdb
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary.csprojAssemblyReference.cache
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\MainWindow.g.cs
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\App.g.cs
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary_MarkupCompile.cache
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary_MarkupCompile.lref
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\MainWindow.baml
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary.g.resources
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary.Properties.Resources.resources
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary.csproj.GenerateResource.cache
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary.csproj.CoreCompileInputs.cache
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary.exe
+D:\GitHub\WordDictionary\WordDictionary\obj\Debug\WordDictionary.pdb
