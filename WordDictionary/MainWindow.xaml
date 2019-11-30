@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <StackPanel>
-        <TextBox Name="InputBox" Margin="200 50 200 0" Padding="5"></TextBox>
+        <TextBox Name="InputBox" Margin="200 50 200 0" Padding="5" TextChanged="InputBox_TextChanged"></TextBox>
         <ComboBox Name="DropDownBox" Margin="200 10 200 0"></ComboBox>
+        <Button IsEnabled="False" x:Name="CreateButton" Content="Dodaj słowo" Padding="2" Margin="250 10 250 10" Click="CreateButton_Click"></Button>
+        <TextBlock x:Name="test"></TextBlock>
     </StackPanel>
 </Window>

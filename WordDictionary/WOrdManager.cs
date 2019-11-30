@@ -18,15 +18,24 @@ namespace WordDictionary
             words = new List<string>();
             foreach(string s in GetWordFromFile())
             {
-                words.Add(s);
+                words.Add(s.ToLower());
             }
+
             baseLetter = new BaseLetterSet();
+
+            foreach (string s in words)
+            {
+                AddWord(s);
+            }
+
         }
 
-        private void AddWord(string word)
+        public void AddWord(string word)
         {
+            string new_word = word + "."; // '.' - word end symbol
+
             Letter l = null;
-            foreach(char c in word)
+            foreach(char c in new_word)
             {
                 // If char isn't first letter of word
                 if(l != null)
@@ -41,17 +50,12 @@ namespace WordDictionary
             }
         }
 
-        /*private IEnumerable<string> GetNext()
-        {
-            foreach (string s in words)
-                yield return s;
-        }*/
-
+        
         public List<string> GetWordChilds(string word)
         {
             List<string> childWords = new List<string>();
 
-            foreach()
+            baseLetter.GetChildWords(word, ref childWords);
 
             return childWords;
         }

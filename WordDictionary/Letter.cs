@@ -13,6 +13,7 @@ namespace WordDictionary
 
         public Letter(char letter)
         {
+            letters = new List<Letter>();
             this.letter = letter;
         }
 
@@ -37,10 +38,12 @@ namespace WordDictionary
 
         public void GetChildWords(string startWord, string buildedWord, ref List<string> wordList)
         {
-            if(letters.Count == 0 && startWord.Length == 0)
+            Console.WriteLine(startWord + " - " + buildedWord);
+            if(letters.Count == 0 && startWord.Length == 0 && buildedWord.Length>0)
             {
                 // End recursion
-                wordList.Add(buildedWord + this.ToChar());
+                wordList.Add(buildedWord);
+                return;
             }
             
             if(startWord.Length == 0)
@@ -48,12 +51,14 @@ namespace WordDictionary
                 // Find every word builded from startWord
                 foreach(Letter l in letters)
                 {
+                    //Console.WriteLine("Ide dalej: " + buildedWord + this.ToChar());
                     l.GetChildWords("", buildedWord + this.ToChar(), ref wordList);
                 }
             }
             else
             {
                 Letter l = GetLetter(startWord[0]);
+                Console.WriteLine((l == null).ToString());
                 if(l != null)
                 {
                     string nextString = startWord.Remove(0, 1);
@@ -64,8 +69,16 @@ namespace WordDictionary
 
         public Letter AddLetter(char c)
         {
+            if (GetLetter(c) != null)
+            {
+                //Console.Write("(e)");
+                return GetLetter(c);
+
+            }
+
             Letter new_letter = new Letter(c);
             letters.Add(new_letter);
+            //Console.Write("(n)");
             return new_letter;
         }
     }
