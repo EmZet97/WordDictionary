@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
     <StackPanel>
-        <TextBox Margin="200 50 200 0" TextAlignment="Center" Padding="5"></TextBox>
-        <dr
+        <TextBox Name="InputBox" Margin="200 50 200 0" Padding="5"></TextBox>
+        <ComboBox Name="DropDownBox" Margin="200 10 200 0"></ComboBox>
     </StackPanel>
 </Window>

@@ -35,6 +35,33 @@ namespace WordDictionary
             return null;
         }
 
+        public void GetChildWords(string startWord, string buildedWord, ref List<string> wordList)
+        {
+            if(letters.Count == 0 && startWord.Length == 0)
+            {
+                // End recursion
+                wordList.Add(buildedWord + this.ToChar());
+            }
+            
+            if(startWord.Length == 0)
+            {
+                // Find every word builded from startWord
+                foreach(Letter l in letters)
+                {
+                    l.GetChildWords("", buildedWord + this.ToChar(), ref wordList);
+                }
+            }
+            else
+            {
+                Letter l = GetLetter(startWord[0]);
+                if(l != null)
+                {
+                    string nextString = startWord.Remove(0, 1);
+                    l.GetChildWords(nextString, buildedWord + this.ToChar(), ref wordList);
+                }
+            }
+        }
+
         public Letter AddLetter(char c)
         {
             Letter new_letter = new Letter(c);

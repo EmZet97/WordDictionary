@@ -21,9 +21,9 @@ namespace WordDictionary
             }
 
             //If doesnt exist return null
-            return null;
+            return AddLetter(c);
         }
-        public Letter AddLetter(char c)
+        private Letter AddLetter(char c)
         {
             Letter new_letter = new Letter(c);
             letters.Add(new_letter);

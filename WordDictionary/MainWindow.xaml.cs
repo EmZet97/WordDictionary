@@ -23,6 +23,8 @@ namespace WordDictionary
         public MainWindow()
         {
             InitializeComponent();
+            WordManager letterManager = new WordManager();
+            //DropDownBox.ItemsSource = letterManager.GetWords();
         }
     }
 }
