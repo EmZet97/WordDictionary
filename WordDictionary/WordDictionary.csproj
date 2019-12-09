@@ -65,7 +65,6 @@
     </Compile>
     <Compile Include="BaseLetterSet.cs" />
     <Compile Include="Letter.cs" />
-    <Compile Include="LetterManager.cs" />
     <Compile Include="WordManager.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
